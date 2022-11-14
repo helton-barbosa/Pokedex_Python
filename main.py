@@ -80,4 +80,41 @@ pk_habilidades_1.place(x=180, y=360)
 pk_habilidades_2 = Label(janela, text='Cabeçada', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=co1, fg=co4)
 pk_habilidades_2.place(x=180, y=385)
 
+# Criando botões para Pokemon
+pokemon_imagem_1 = Image.open('images/cabeca-pikachu.png')
+pokemon_imagem_1 = pokemon_imagem_1.resize((40, 40))
+pokemon_imagem_1 = ImageTk.PhotoImage(pokemon_imagem_1)
+bt_pk_1 = Button(janela, image=pokemon_imagem_1, text="Pikachu", width=150, relief='raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+bt_pk_1.place(x=375, y=10)
+
+pokemon_imagem_2 = Image.open('images/cabeca-bulbasaur.png')
+pokemon_imagem_2 = pokemon_imagem_2.resize((40, 40))
+pokemon_imagem_2 = ImageTk.PhotoImage(pokemon_imagem_2)
+bt_pk_2 = Button(janela, image=pokemon_imagem_2, text="Bulbasaur", width=150, relief='raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+bt_pk_2.place(x=375, y=65)
+
+pokemon_imagem_3 = Image.open('images/cabeca-charmander.png')
+pokemon_imagem_3 = pokemon_imagem_3.resize((40, 40))
+pokemon_imagem_3 = ImageTk.PhotoImage(pokemon_imagem_3)
+bt_pk_3 = Button(janela, image=pokemon_imagem_3, text="Chamander", width=150, relief='raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+bt_pk_3.place(x=375, y=120)
+
+pokemon_imagem_4 = Image.open('images/cabeca-gyarados.png')
+pokemon_imagem_4 = pokemon_imagem_4.resize((40, 40))
+pokemon_imagem_4 = ImageTk.PhotoImage(pokemon_imagem_4)
+bt_pk_4 = Button(janela, image=pokemon_imagem_4, text="Gyarados", width=150, relief='raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+bt_pk_4.place(x=375, y=175)
+
+pokemon_imagem_5 = Image.open('images/cabeca-gengar.png')
+pokemon_imagem_5 = pokemon_imagem_5.resize((40, 40))
+pokemon_imagem_5 = ImageTk.PhotoImage(pokemon_imagem_5)
+bt_pk_5 = Button(janela, image=pokemon_imagem_5, text="Gengar", width=150, relief='raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+bt_pk_5.place(x=375, y=230)
+
+pokemon_imagem_6 = Image.open('images/cabeca-dragonite.png')
+pokemon_imagem_6 = pokemon_imagem_6.resize((40, 40))
+pokemon_imagem_6 = ImageTk.PhotoImage(pokemon_imagem_6)
+bt_pk_6 = Button(janela, image=pokemon_imagem_6, text="Dragonite", width=150, relief='raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+bt_pk_6.place(x=375, y=285)
+
 janela.mainloop()
